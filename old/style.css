@@ -1,0 +1,73 @@
+:root {
+    --fundo: #282a36;
+    --linha: #44475a;
+    --texto: #f8f8f2;
+    --importante: #ff79c6;
+    --extra: #ff79c6;
+}
+* {
+    margin: 0;
+    font-family: sans-serif;
+    color: var(--texto);
+}
+body {
+    background-color: var(--fundo);
+}
+@media screen and (orientation: landscape) {
+    .diamante {
+    display: block;
+    margin: auto;
+    margin-top: 1%;
+    width: 10%;
+    height: 10%;
+    border: 1px solid var(--linha);
+    border-radius: 10px;
+    }
+    .instagram, .youtube, .twitch, .discord, .tiktok, .facebook, .github {
+        width: 4.5%;
+        height: 4.5%;
+        padding: 0.3%;
+    }
+    img {
+        display: block;
+        margin: auto;
+        margin-top: 1%;
+        width: 5%;
+        height: 5%;
+        border: 1px solid var(--linha);
+        border-radius: 10px;
+    }
+    .mal {
+        border: 1px solid #BBB8A5;
+        filter: invert(1);
+    }
+}
+@media screen and (orientation: portrait) {
+    .diamante {
+        display: block;
+        margin: auto;
+        margin-top: 1%;
+        width: clamp(10%, 40%, 40%);
+        height: 10%;
+        border: 1px solid var(--linha);
+        border-radius: 10px;
+    }
+    img {
+        display: block;
+        margin: auto;
+        margin-top: 1%;
+        width: clamp(10%, 30%, 30%);
+        height: 5%;
+        border: 1px solid var(--linha);
+        border-radius: 10px;
+    }
+    .instagram, .youtube, .twitch, .discord, .tiktok, .mal, .facebook, .twitter {
+        width: clamp(4.5%, 30%, 30%);
+        height: 4.5%;
+        padding: 1%;
+    }
+    .mal {
+        border: 1px solid #BBB8A5;
+        filter: invert(1);
+    }
+}
