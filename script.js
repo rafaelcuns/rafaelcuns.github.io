@@ -17,3 +17,24 @@ function languageSwitcher(lang) {
 }
 
 languageSwitcher(navigator.language)
+
+// Show/Hide YouTube dropdown menu workaround
+document.querySelector("a.yt-links").style.display = "none"
+
+function showHideLinks() {
+    if (document.querySelector("a.yt-links").style.display == "none") {
+        document.querySelectorAll("a.yt-links").forEach(element => {
+            element.style.display = "block"
+        })
+    } else {
+        document.querySelectorAll("a.yt-links").forEach(element => {
+            element.style.display = "none"
+        })
+    }
+}
+
+// Function to copy Discord username to clipboard
+function copyDiscord() {
+    navigator.clipboard.writeText("Pulga#8417");
+    alert("Pulga#8417");
+}
