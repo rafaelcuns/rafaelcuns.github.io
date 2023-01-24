@@ -152,7 +152,11 @@ a#fb {
         background-color: #282a36;
     }
 
-    a {
-        margin-top: 5%;
+    a:not(a.yt-links) {
+        margin-top: 10%;
+    }
+
+    a#fb {
+        margin-bottom: 10%;
     }
 }
