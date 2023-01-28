@@ -32,9 +32,3 @@ function showHideLinks() {
         })
     }
 }
-
-// Function to copy Discord username to clipboard
-function copyDiscord() {
-    navigator.clipboard.writeText("Pulga#8417");
-    alert("Pulga#8417");
-}
