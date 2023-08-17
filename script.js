@@ -4,14 +4,18 @@ function languageSwitcher(lang) {
         case "pt-BR":
         case "pt-PT":
         case "pt":
-            let li = document.querySelectorAll("li")
-            
-            li[0].innerHTML = "Estudante do Instituto Federal do Rio de Janeiro com ensino técnico de Informática junto ao Ensino Médio"
-            li[1].innerHTML = "Tecladista iniciante"
-            li[2].innerHTML = "Fâ de Minecrtaft"
-            li[3].innerHTML = "E muito mais!"
+            // let li = document.querySelectorAll("li")
+            // li[0].innerHTML = "Estudante do Instituto Federal do Rio de Janeiro com ensino técnico de Informática junto ao Ensino Médio"
+            // li[1].innerHTML = "Tecladista iniciante"
+            // li[2].innerHTML = "Fâ de Minecrtaft"
+            // li[3].innerHTML = "E muito mais!"
 
-            document.querySelectorAll("h1")[1].innerHTML = "Meus Links:"
+            document.querySelector("h2").innerHTML = "Meus Links:"
+            break;
+        case "it":
+        case "it-IT":
+        case "it-CH":
+            document.querySelector("h2").innerHTML = "I miei link:"
             break;
     }
 }

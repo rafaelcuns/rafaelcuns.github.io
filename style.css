@@ -87,6 +87,15 @@ a#git {
     background-color: #333;
 }
 
+a#muse {
+    background-color: #2e68c0;
+}
+
+a#dd {
+    background-color: #7289DA;
+    cursor: pointer;
+}
+
 a#sk {
     background-color: #3189c8;
 }
@@ -101,11 +110,6 @@ a#mal {
 
 a#tw {
     background-color: #9146FF;
-}
-
-a#dd {
-    background-color: #7289DA;
-    cursor: pointer;
 }
 
 a#tk {
