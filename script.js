@@ -4,13 +4,9 @@ function languageSwitcher(lang) {
         case "pt-BR":
         case "pt-PT":
         case "pt":
-            // let li = document.querySelectorAll("li")
-            // li[0].innerHTML = "Estudante do Instituto Federal do Rio de Janeiro com ensino técnico de Informática junto ao Ensino Médio"
-            // li[1].innerHTML = "Tecladista iniciante"
-            // li[2].innerHTML = "Fâ de Minecrtaft"
-            // li[3].innerHTML = "E muito mais!"
-
             document.querySelector("h2").innerHTML = "Meus Links:"
+            document.querySelectorAll('.random-links')[0].innerHTML = "Meu primeiro jogo Scratch"
+            document.querySelector("#random").innerHTML = "Links aleatórios 👇"
             break;
         case "it":
         case "it-IT":
@@ -24,14 +20,15 @@ languageSwitcher(navigator.language)
 
 // Show/Hide YouTube dropdown menu workaround
 document.querySelector("a.yt-links").style.display = "none"
+document.querySelector("a.random-links").style.display = "none"
 
-function showHideLinks() {
-    if (document.querySelector("a.yt-links").style.display == "none") {
-        document.querySelectorAll("a.yt-links").forEach(element => {
+function showHideLinks(linkType) {
+    if (document.querySelector("a." + linkType).style.display == "none") {
+        document.querySelectorAll("a." + linkType).forEach(element => {
             element.style.display = "block"
         })
     } else {
-        document.querySelectorAll("a.yt-links").forEach(element => {
+        document.querySelectorAll("a." + linkType).forEach(element => {
             element.style.display = "none"
         })
     }

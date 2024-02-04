@@ -31,16 +31,12 @@ hr {
     border-color: #6c7192;
 }
 
-p, h1, h2, li {
+h1, h2 {
     color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-li {
-    margin: 5%;
-}
-
-a:not(a.yt-links) {
+a.buttons {
     text-align: center;
     text-decoration: none;
     color: var(--text);
@@ -51,7 +47,7 @@ a:not(a.yt-links) {
     transition: linear 100ms;
 }
 
-a:not(a.yt-links):hover {
+a.buttons:hover {
     font-size: large;
     padding: 0.5%;
 }
@@ -61,7 +57,7 @@ a#yt {
     cursor: pointer;
 }
 
-a.yt-links {
+a.links {
     display: none;
     text-align: center;
     text-decoration: none;
@@ -71,11 +67,11 @@ a.yt-links {
     transition: linear 100ms;
 }
 
-a.yt-links::before {
+a.links::before {
     content: "👉 ";
 }
 
-a.yt-links:hover {
+a.links:hover {
     font-weight: bold;
 }
 
@@ -120,38 +116,43 @@ a#fb {
     background-color: #3b5998;
 }
 
+a#random {
+    background-color: #282a36;
+    border: 1px solid #6c7192;
+}
+
 @media screen and (orientation: landscape) {
     img {
         width: 10%;
         height: 10%;
     }
 
-    a:not(a.yt-links) {
+    a.buttons {
         padding: 0.5%;
         margin-top: 2%;
     }
 
-    a:not(a.yt-links):hover {
+    a.buttons:hover {
         padding: 0.75%;
     }
 
-    a#fb {
+    span {
         margin-bottom: 3%;
     }
 }
 
 @media screen and (orientation: portrait) {
-    a:not(a.yt-links) {
+    a.buttons {
         padding: 2%;
         margin-top: 13%;
         width: 70%;
     }
 
-    a.yt-links {
+    a.links {
         padding: 2%;
     }
 
-    a#fb {
+    span {
         margin-bottom: 10%;
     }
 }
