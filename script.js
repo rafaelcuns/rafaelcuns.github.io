@@ -6,12 +6,14 @@ function languageSwitcher(lang) {
         case "pt":
             document.querySelector("h2").innerHTML = "Meus Links:"
             document.querySelectorAll('.random-links')[0].innerHTML = "Meu primeiro jogo Scratch"
-            document.querySelector("#random").innerHTML = "Links aleatórios 👇"
+            document.querySelector("#random").innerHTML = "Outros links 👇"
             break;
         case "it":
         case "it-IT":
         case "it-CH":
             document.querySelector("h2").innerHTML = "I miei link:"
+            document.querySelectorAll('.random-links')[0].innerHTML = "Il mio primo gioco Scratch"
+            document.querySelector("#random").innerHTML = "Altri link 👇"
             break;
     }
 }
